@@ -26,7 +26,7 @@ class ApiHandler(Resource):
     ret_msg = request_json
 
     if ret_msg:
-      message = "Your Message Requested: {}".format(ret_msg)
+      message = f'Your Message Requested: {ret_msg}'
     else:
       message = "No Msg"
     
